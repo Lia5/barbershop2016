@@ -1,0 +1,48 @@
+@import "variables.scss";
+
+@font-face {
+  font-weight: normal;
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+
+  src: url("../fonts/PTSansNarrow.woff2") format("woff2"), 
+  url("../fonts/PTSansNarrow.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+
+  src: url("../fonts/PTSansNarrowBold.woff2") format("woff2"), 
+  url("../fonts/PTSansNarrowBold.woff") format("woff");
+}
+
+body {
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  color: #f7f4f1;
+  font-style: normal;
+
+  background-color: $bg-darkgrey;
+  //@debug $bg-darkgrey; - посмотреть значение
+};
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden{    //не показывает элементы, которые мы хотим скрыть. пробела нет
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
